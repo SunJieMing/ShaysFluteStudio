@@ -1,14 +1,13 @@
 //
 // This is the client side entry point for the React app.
 //
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import { render } from 'react-dom';
 import { routes } from './routes';
 import { Router, browserHistory } from 'react-router';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-/* eslint-enable no-unused-vars */
+import injectTapEventPlugin from "react-tap-event-plugin";
 
 import './styles/base.css';
 import rootReducer from './reducers';
@@ -18,6 +17,7 @@ import rootReducer from './reducers';
 // DOM is created.
 
 window.webappStart = () => {
+ 	injectTapEventPlugin(); // https://github.com/callemall/material-ui/issues/4670
   const initialState = window.__PRELOADED_STATE__;
   const store = createStore(rootReducer, initialState);
   render(

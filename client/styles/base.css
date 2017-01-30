@@ -3,6 +3,10 @@
   --white: #fff;
 }
 
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
   font: 12px Helvetica, Arial, sans-serif;
 }
@@ -16,10 +20,6 @@ a.button {
 h1 {
   font-size: 16px;
   color: red;
-}
-
-p {
-    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 a {
@@ -39,3 +39,4 @@ a:hover {
   border-bottom: 2px solid blue;
   text-align: center;
 }
+

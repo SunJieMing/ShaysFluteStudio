@@ -1,6 +1,9 @@
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { toggleCheck, incNumber, decNumber } from '../actions';
+import RaisedButton from 'material-ui/RaisedButton';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 export const imageUrls = [
   'http://daynin.github.io/clojurescript-presentation/img/react-logo.png',
@@ -22,6 +25,9 @@ class Home extends React.Component {
     const { checked, value } = props;
     return (
       <div>
+        <MuiThemeProvider muiTheme={getMuiTheme()}>
+          <RaisedButton label='test'/>
+        </MuiThemeProvider>
         <h1>Hello <a href={'https://github.com/electrode-io'}>{'Electrode'}</a></h1>
         <div> <p>Our beloved friends</p></div>
         <div className='images'>

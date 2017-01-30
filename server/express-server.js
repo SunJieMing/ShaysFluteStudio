@@ -8,6 +8,13 @@ const _ = require("lodash");
 const defaultConfig = require("electrode-confippet").config;
 const Confippet = require("electrode-confippet");
 
+app.use(function(req, res, next) {
+    GLOBAL.navigator = {
+        userAgent: req.headers['user-agent']
+    }
+    next();
+});
+
 const loadConfigs = function (userConfig) {
   //use confippet to merge user config and default config
   if (_.get(userConfig, "plugins.electrodeStaticPaths.enable")) {
