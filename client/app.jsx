@@ -1,16 +1,17 @@
 //
 // This is the client side entry point for the React app.
 //
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import { render } from 'react-dom';
+import { routes } from './routes';
+import { Router, browserHistory } from 'react-router';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+/* eslint-enable no-unused-vars */
 
-import React from "react";
-import {render} from "react-dom";
-import {routes} from "./routes";
-import {Router, browserHistory} from "react-router";
-import {createStore} from "redux";
-import {Provider} from "react-redux";
-
-import "./styles/base.css";
-import rootReducer from "./reducers";
+import './styles/base.css';
+import rootReducer from './reducers';
 
 // Add the client app start up code to a function as window.webappStart.
 // The webapp's full HTML will check and call it once the js-content
@@ -23,6 +24,6 @@ window.webappStart = () => {
     <Provider store={store}>
       <Router history={browserHistory}>{routes}</Router>
     </Provider>,
-    document.querySelector(".js-content")
+    document.querySelector('.js-content')
   );
 };
