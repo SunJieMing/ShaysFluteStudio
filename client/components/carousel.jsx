@@ -11,7 +11,9 @@ export default class Carousel extends Component {
 
 	propTypes() {
 		return {
-			onImageLoad: React.PropTypes.function
+			onImageLoad: React.PropTypes.function,
+			header: React.PropTypes.string.isRequired,
+			mainCopy: React.PropTypes.string.isRequired
 		};
 	}
 
@@ -23,7 +25,10 @@ export default class Carousel extends Component {
 					src={imageUrl}
 					onLoad={this.props.onImageLoad}
 					/>
-				<Greeting />
+				<Greeting 
+					header={this.props.header}
+					mainCopy={this.props.mainCopy}
+					/>
 			</div>
 		);
 	}

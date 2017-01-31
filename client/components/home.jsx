@@ -10,7 +10,9 @@ import Body from './body';
 import Footer from './footer';
 import Overlay from './overlay';
 import ButtonBar from './button-bar';
+
 import styles from '../styles/home.css';
+import copy from '../copy/home-copy';
 
 class Home extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ class Home extends React.Component {
     this.state = {
       showOverlay: true
     };
-    console.log('this.props', this.props);
+
     this.onImageLoad = this.onImageLoad.bind(this);
   }
 
@@ -34,7 +36,11 @@ class Home extends React.Component {
         { this.state.showOverlay ? <Overlay /> : null }
         <Navbar />
         <ButtonBar pathname={this.props.location.pathname} />
-        <Carousel onImageLoad={this.onImageLoad} />
+        <Carousel 
+          onImageLoad={this.onImageLoad}
+          header={copy.greetingHeader}
+          mainCopy={copy.greetingCopy} 
+          />
         <Body />
         <MuiThemeProvider muiTheme={getMuiTheme()}>
           <RaisedButton label='test'/>

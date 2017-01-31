@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from '../styles/carousel.css';
 
-const Greeting = () => (
-	<div className={styles.greeting}>
-		<h2 className={styles.welcomeHeader}>HOME</h2>
-		<p>Here's some stuff about me...</p>
-	</div>
-);
+export default class Greeting extends Component {
+	constructor(props) {
+		super(props);
+	}
 
-export default Greeting;
+	propTypes() {
+		return {
+			header: React.PropTypes.string.isRequired,
+			mainCopy: React.PropTypes.string.isRequired
+		}
+	}
+	
+	render() {
+		return (
+			<div className={styles.greeting}>
+				<h2 className={styles.welcomeHeader}>{this.props.header}</h2>
+				<p>{this.props.mainCopy}</p>
+			</div>
+		);
+	}
+}
+
