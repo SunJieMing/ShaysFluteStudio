@@ -4,6 +4,10 @@ import { toggleCheck, incNumber, decNumber } from '../actions';
 import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import Navbar from './navbar';
+import Carousel from './carousel';
+import Body from './body';
+import Footer from './footer';
 
 export const imageUrls = [
   'http://daynin.github.io/clojurescript-presentation/img/react-logo.png',
@@ -25,26 +29,13 @@ class Home extends React.Component {
     const { checked, value } = props;
     return (
       <div>
+        <Navbar />
+        <Carousel />
+        <Body />
         <MuiThemeProvider muiTheme={getMuiTheme()}>
           <RaisedButton label='test'/>
         </MuiThemeProvider>
-        <h1>Hello <a href={'https://github.com/electrode-io'}>{'Electrode'}</a></h1>
-        <div> <p>Our beloved friends</p></div>
-        <div className='images'>
-          {imageUrls.map((imageUrl, index) => this.renderImage(imageUrl, index))}
-        </div>
-        <div>
-          <h2>Managing States with Redux</h2>
-          <label>
-            <input onChange={props.onChangeCheck} type={'checkbox'} checked={checked}/>
-            Checkbox
-          </label>
-          <div>
-            <button type={'button'} onClick={props.onDecrease}>-</button>
-            &nbsp;{value}&nbsp;
-            <button type={'button'} onClick={props.onIncrease}>+</button>
-          </div>
-        </div>
+        <Footer />
       </div>
     );
   }
