@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from '../styles/carousel.css';
-
+//import imageUrl from '../images/fall.jpg';
 const imageUrl = 'https://images-na.ssl-images-amazon.com/images/G/01/poppin/gateway/Dec/121916_GW_H1_generic3_desktop_2x._CB523852253_.jpg';
 
-const Carousel = () => (
-	<div>
-		<img className={styles.carousel} src={imageUrl} />
-	</div>
-);
+export default class Carousel extends Component {
+	constructor(props) {
+		super(props);
+	}
 
-export default Carousel;
+	propTypes() {
+		return {
+			onImageLoad: React.PropTypes.function
+		};
+	}
+
+	render() {
+		return (
+			<div>
+				<img 
+					className={styles.carousel} 
+					src={imageUrl}
+					onLoad={this.props.onImageLoad}
+					/>
+			</div>
+		);
+	}
+}
