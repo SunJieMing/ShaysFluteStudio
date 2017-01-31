@@ -11,3 +11,36 @@
 	text-decoration: none;
 	font-size: 30pt;
 }
+
+.buttonBar {
+	background-color: #f25f70;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	color: #ffffff;
+	padding-right: 15px;
+	font-size: 15px;
+}
+
+.currentRoute {
+	color: #4f4f4f;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:hover {
+	color: #4f4f4f;
+}

@@ -11,10 +11,14 @@ import './styles/home.css';
 import React from 'react';
 import { render } from 'react-dom';
 import { routes } from './routes';
-import { Router, browserHistory } from 'react-router';
+import { Router, browserHistory, Route } from 'react-router';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import injectTapEventPlugin from "react-tap-event-plugin";
+
+import Home from './components/home';
+import About from './components/about';
+import Contact from './components/contact';
 
 
 import rootReducer from './reducers';
@@ -29,7 +33,11 @@ window.webappStart = () => {
   const store = createStore(rootReducer, initialState);
   render(
     <Provider store={store}>
-      <Router history={browserHistory}>{routes}</Router>
+      <Router history={browserHistory}>
+      	<Route path='/' component={Home} />
+      	<Route path='/about' component={About} />
+      	<Route path='/contact' component={Contact} />
+      </Router>
     </Provider>,
     document.querySelector('.js-content')
   );
