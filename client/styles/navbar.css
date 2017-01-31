@@ -1,4 +1,13 @@
 .navbar {
-	height: 100px;
+	height: 150px;
 	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon {
+	color: #333;
+	text-decoration: none;
+	font-size: 30pt;
 }

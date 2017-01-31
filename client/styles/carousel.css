@@ -1,3 +1,31 @@
 .carousel {
 	width: 100%;
 }
+
+.greeting {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255, 255, 255, .9);
+	width: 485px;
+	height: 248px;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.welcomeHeader {
+	font-size: 20pt;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	font-weight: 300;
+}
