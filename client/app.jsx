@@ -14,6 +14,7 @@ import './styles/navbar.css';
 import './styles/body-styles.css';
 import './styles/footer.css';
 import './styles/carousel.css';
+import './styles/home.css';
 import rootReducer from './reducers';
 
 // Add the client app start up code to a function as window.webappStart.
