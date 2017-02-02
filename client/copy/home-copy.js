@@ -1,5 +1,5 @@
 const copy = {
-	greetingHeader: 'HOME',
+	greetingHeader: 'Home',
 	greetingCopy: 'Text about Shay\'s Flute Studio...'
 };
 
