@@ -1,6 +1,15 @@
 .bodyCard {
-	height: 300px;
-	width: 275px;
-	background-color: blue;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 450px;
+	width: 350px;
+}
+
+.bodyCardImage {
+	width: 100%;
+}
+
+.bodyCardCopy {
+
 }
 

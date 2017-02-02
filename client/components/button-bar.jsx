@@ -19,13 +19,13 @@ export default class ButtonBar extends Component {
 			<div className={styles.buttonBar}>
 				<ul className={styles.buttonContainer}>
 					<li className={styles.button}>
-						<a className={this.props.pathname === '/' ? styles.currentRoute : null} href='/'>HOME</a>
+						<a className={this.props.pathname === '/' ? styles.currentRoute : null} href='/'>Home</a>
 					</li>
 					<li className={styles.button}>
-						<a className={this.props.pathname === '/about' ? styles.currentRoute : null} href='/about'>ABOUT</a>
+						<a className={this.props.pathname === '/about' ? styles.currentRoute : null} href='/about'>About</a>
 					</li>
 					<li className={styles.button}>
-						<a className={this.props.pathname === '/contact' ? styles.currentRoute : null} href='/contact'>CONTACT</a>
+						<a className={this.props.pathname === '/contact' ? styles.currentRoute : null} href='/contact'>Contact</a>
 					</li>
 				</ul>
 			</div>

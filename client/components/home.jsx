@@ -42,9 +42,7 @@ class Home extends React.Component {
           mainCopy={copy.greetingCopy} 
           />
         <Body />
-        <MuiThemeProvider muiTheme={getMuiTheme()}>
-          <RaisedButton label='test'/>
-        </MuiThemeProvider>
+
         <Footer />
       </div>
     );
@@ -81,3 +79,7 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
+
+//<MuiThemeProvider muiTheme={getMuiTheme()}>
+//  <RaisedButton label='test'/>
+//</MuiThemeProvider>
