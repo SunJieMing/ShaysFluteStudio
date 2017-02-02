@@ -17,8 +17,8 @@ import { Provider } from 'react-redux';
 import injectTapEventPlugin from "react-tap-event-plugin";
 
 import Home from './components/home';
-import About from './components/about';
-import Contact from './components/contact';
+import About from './components/about/about.jsx';
+import Contact from './components/contact/contact';
 
 
 import rootReducer from './reducers';

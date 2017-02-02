@@ -15,3 +15,13 @@
 .loadOverlay {
 	display: none;
 }
+
+.contactBody {
+	height: 800px;
+	background-color: #fff;
+}
+
+.aboutBody {
+	height: 400px;
+	background-color: #fff;
+}

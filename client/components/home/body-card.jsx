@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/body-styles.css';
+import styles from '../../styles/body-styles.css';
 
 const BodyCard = () => (
 	<li className={styles.bodyCard}>

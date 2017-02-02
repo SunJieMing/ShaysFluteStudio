@@ -6,7 +6,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Navbar from './navbar';
 import Carousel from './carousel';
-import Body from './body';
+import Body from './home/body';
 import Footer from './footer';
 import Overlay from './overlay';
 import ButtonBar from './button-bar';

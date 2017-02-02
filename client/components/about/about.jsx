@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Overlay from './overlay';
-import Navbar from './navbar';
-import ButtonBar from './button-bar';
-import Carousel from './carousel';
-import Footer from './footer';
-import styles from '../styles/home.css';
-import copy from '../copy/about-copy';
+import Overlay from '../overlay';
+import Navbar from '../navbar';
+import ButtonBar from '../button-bar';
+import Carousel from '../carousel';
+import Body from './about-body';
+import Footer from './../footer';
+import styles from '../../styles/home.css';
+import copy from '../../copy/about-copy';
 
 export default class About extends Component {
 	constructor(props) {
@@ -32,6 +33,7 @@ export default class About extends Component {
 					header={copy.aboutHeader}
 					mainCopy={copy.aboutCopy}
 					/>
+				<Body />
 				<Footer />
 			</div>
 		);
