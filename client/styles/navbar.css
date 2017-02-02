@@ -29,12 +29,14 @@
 
 .button {
 	color: #ffffff;
-	padding-right: 15px;
+	padding-right: 40px;
 	font-size: 15px;
+	font-weight: 100;
+	margin-left: 40px;
 }
 
 .currentRoute {
-	color: #4f4f4f;
+	color: #333;
 }
 
 a {
@@ -43,5 +45,5 @@ a {
 }
 
 a:hover {
-	color: #4f4f4f;
+	color: #333;
 }
