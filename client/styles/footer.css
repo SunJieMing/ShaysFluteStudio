@@ -1,4 +1,24 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
 .footer {
 	background-color: #404040;
 	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon {
+	color: #f25f70;
+	font-size: 20pt;
+}
+
+.iconBackground {
+	background-color: white;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
