@@ -42,7 +42,6 @@ class Home extends React.Component {
           mainCopy={copy.greetingCopy} 
           />
         <Body />
-
         <Footer />
       </div>
     );

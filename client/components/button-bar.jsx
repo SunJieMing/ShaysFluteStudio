@@ -13,8 +13,6 @@ export default class ButtonBar extends Component {
 	}
 
 	render() {
-		console.log('current path', this.props.pathname === '/');
-
 		return (
 			<div className={styles.buttonBar}>
 				<ul className={styles.buttonContainer}>
