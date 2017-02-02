@@ -1,5 +1,5 @@
 .bodyCard {
-	margin-top: 15px;
+	margin-top: 25px;
 	margin-bottom: 15px;
 	height: 450px;
 	width: 350px;
@@ -11,5 +11,12 @@
 
 .bodyCardCopy {
 
+}
+
+.bodyCardHeader {
+	text-align: center;
+	margin-bottom: 25px;
+	font-weight: 100;
+	font-size: 20pt;
 }
 
